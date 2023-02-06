@@ -1,0 +1,53 @@
+header {
+    align-items: center;
+    display: inline-flex;
+    margin: 40px 7%;
+    margin-bottom: 20px;
+    width: 86%;
+}
+  
+header > img {
+    height: 68px;
+}
+  
+nav {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+}
+  
+.link {
+    color: #ff6060;
+    margin: auto 0;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #000000;
+}
+  
+.link.active {
+    border-bottom: 1px solid #ff6060;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin: 20px 5%;
+        width: 90%;
+    }
+
+    header > img {
+        height: 47px;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .link {
+        margin-left: 5%;
+        text-transform: uppercase;
+    }
+}

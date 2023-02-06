@@ -1,0 +1,47 @@
+.banner {
+    height: 223px;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.banner > img {
+    border-radius: 25px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.banner__overlay {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+}
+
+.banner > span {
+    font-size: 48px;
+    color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 111px;
+        text-align: left;
+    }
+
+    .banner > span {
+        font-size: 24px;
+        margin-left: 5%;
+    }
+}
