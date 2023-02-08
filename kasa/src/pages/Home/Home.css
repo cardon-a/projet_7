@@ -6,8 +6,26 @@ main {
     margin: 43px 0;
 }
 
+.lodging__list {
+    background-color: #F7F7F7;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 4%;
+}
+
+
+
 @media screen and (max-width: 768px) {
     main {
         margin: 0 5%;
+    }
+
+    .lodging__list {
+        background-color: #FFFFFF;
+        padding: 0;
     }
 }
