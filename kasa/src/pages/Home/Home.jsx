@@ -9,7 +9,7 @@ function Home() {
     <div className='home'>
       <Banner image={BannerImg} text='Chez vous, partout et ailleurs'/>
       <div className='lodging__list'>
-        {LodgingList.map((lodging) => <Card id={ lodging.id } image={ lodging.cover } title={ lodging.title }/>)}
+        {LodgingList.map((lodging) => <Card key={ lodging.id } id={ lodging.id } image={ lodging.cover } title={ lodging.title }/>)}
       </div>
     </div>
   );

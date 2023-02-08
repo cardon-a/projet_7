@@ -1,0 +1,54 @@
+.collapse {
+    width: 80%;
+}
+
+.collapse__header {
+    display: flex;
+    height: 50px;
+    background-color: #FF6060;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.collapse__header > span {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+
+.collapse__header > img {
+    height: 30%;
+    margin-right: 2%;
+}
+
+.collapse__description {
+    background-color: #F6F6F6;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 0 0 5px 5px;
+    padding: 3%;
+}
+
+.true {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .collapse {
+        width: 100%;
+    }
+
+    .collapse__header {
+        height: 30px;
+    }
+
+    .collapse__header > span {
+        font-size: 13px;
+    }
+
+    .collapse__description {
+        font-size: 12px;
+    }
+}
