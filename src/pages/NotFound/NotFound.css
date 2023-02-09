@@ -1,0 +1,49 @@
+.notFound {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #FF6060;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notFound > h1 {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 5%;
+}
+
+.notFound > span {
+    font-size: 36px;
+    text-align: center;
+}
+
+.notFound__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FF6060;
+    text-decoration-line: underline;
+    margin: 15%;
+}
+
+.notFound__link:hover {
+    color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+    .notFound > h1 {
+        margin-top: 30%;
+        font-size: 96px;
+    }
+
+    .notFound > span {
+        font-size: 18px;
+        margin: 0 10%;
+    }
+
+    .notFound__link {
+        font-size: 14px;
+        margin: 40% 0;
+    }
+
+}
