@@ -1,5 +1,5 @@
 import './Collapse.css'
-import Arrow from '../../assets/images/arrow.svg'
+import Arrow from '../../assets/components/Collapse/arrow.svg'
 import { useState } from 'react';
 
 function Collapse({ title, description }) {

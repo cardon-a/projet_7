@@ -1,5 +1,6 @@
 .collapse {
     width: 80%;
+    font-size: 24px;
 }
 
 .collapse__header {
@@ -12,7 +13,6 @@
 }
 
 .collapse__header > span {
-    font-size: 24px;
     color: #FFFFFF;
     margin-left: 2%;
 }
@@ -25,10 +25,10 @@
 .collapse__description {
     background-color: #F6F6F6;
     color: #FF6060;
-    font-size: 24px;
     font-weight: 400;
     border-radius: 0 0 5px 5px;
-    padding: 3%;
+    padding: 6% 4%;
+    white-space: pre-line;
 }
 
 .true {

@@ -5,3 +5,9 @@
     gap: 30px;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .About > .banner {
+        height: 223px;
+    }
+}
