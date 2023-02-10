@@ -1,11 +1,11 @@
 import './Lodging.css';
 import LodgingList from '../../data/lodging.json'
-import Banner from '../../components/Banner/Banner'
 import { useParams } from 'react-router-dom';
 import Star from '../../assets/pages/Lodging/star.svg'
 import StarEmpty from '../../assets/pages/Lodging/starEmpty.svg'
 import Tag from '../../components/Tag/Tag'
 import Collapse from '../../components/Collapse/Collapse'
+import Carousel from '../../components/Carousel/Carousel'
 
 function Lodging() {
   const id = useParams()  // Récupération de l'id et du bon produit
@@ -22,11 +22,10 @@ function Lodging() {
 
   let equipmentDescription = ''
   lodging.equipments.map(equipment => equipmentDescription = equipmentDescription + equipment + '\n')
-  console.log("Apres "+equipmentDescription)
   
   return (
     <div className="lodging">
-      <Banner image={ lodging.cover } text=''/>
+      <Carousel images={ lodging.pictures }/>
       <div className='lodging__infos'>
         <div className='lodging__infos__left'>
           <h1>{ lodging.title }</h1>

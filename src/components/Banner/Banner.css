@@ -1,7 +1,6 @@
 .banner {
     height: 223px;
     position: relative;
-    border-radius: 25px;
     text-align: center;
     width: 100%;
 }
@@ -43,5 +42,13 @@
     .banner > span {
         font-size: 24px;
         margin-left: 5%;
+    }
+
+    .banner__overlay {
+        border-radius: 10px;
+    }
+
+    .banner > img {
+        border-radius: 10px;
     }
 }

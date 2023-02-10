@@ -3,11 +3,21 @@
     color: #FFFFFF;
     background-color: #FF6060;
     border-radius: 10px;
-    padding: 3px 20px;
+    padding: 3px 5px;
+    min-width: 115px;
+    text-align: center;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .tag {
+        font-size: 10px;
+        border-radius: 5px;
+        min-width: 84px;
+    }
 }

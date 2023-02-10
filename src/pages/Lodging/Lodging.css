@@ -1,11 +1,3 @@
-.lodging > .banner {
-    height: 415px;
-}
-
-.lodging > .banner > .banner__overlay {
-    display: none;
-}
-
 .lodging {
     color: #FF6060;
 }
@@ -77,4 +69,61 @@
     border-radius: 10px;
 }
 
-/* Faire carroussel puis version mobile */
+@media screen and (max-width: 768px) {
+    .lodging__infos {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .lodging__infos__left > h1 {
+        font-size: 18px;
+    }
+    
+    .lodging__infos__left > span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .lodging__infos__right__rate {
+        gap: 5px;
+    }
+
+    .lodging__infos__right__rate > img {
+        height: 15px;
+    }
+
+    .lodging__infos__right__owner > img {
+        height: 32px;
+    }
+
+    .lodging__infos__right__owner > span {
+        font-size: 12px;
+    }
+
+    .lodging__infos__right {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .lodging__infos__right__owner {
+        align-items: center;
+        margin: 0;
+    }
+
+    .lodging__collapse {
+        margin: 24px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .lodging__collapse > .collapse {
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .lodging__collapse > .collapse > .collapse__header {
+        border-radius: 5px;
+    }
+}

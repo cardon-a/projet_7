@@ -1,7 +1,7 @@
 import './Home.css'
 import Card from '../../components/Card/Card'
 import Banner from '../../components/Banner/Banner'
-import BannerImg from '../../assets/pages/Home/title_background.svg'
+import BannerImg from '../../assets/pages/Home/accueil.svg'
 import LodgingList from '../../data/lodging.json'
 
 function Home() {
