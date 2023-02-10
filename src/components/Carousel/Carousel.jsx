@@ -29,15 +29,13 @@ function Carousel({ images }) {
                 imgLength > 1 && <img className="arrow arrow__left" src={ arrow } alt="Vue précédente" onClick={imgPrevious}/>
             }
             {
-                images.map((image, index) => {
-                    return(<img key={ index } className={ index === imgHook ? 'carousel__active' : 'carousel__inactive' } src={ image } alt='Logement'/>)
+                images.map((image, i) => {
+                    return(<img key={ i } className={ i === imgHook ? 'carousel__img' : 'inactive' } src={ image } alt='Logement'/>)
                 })
             }
-            <span className='carousel__legend'>
-                { imgHook + 1 }/{ imgLength }
-            </span>
+            <span className={ imgLength === 1 ? 'carousel__legend  inactive' : 'carousel__legend' }>{ imgHook + 1 }/{ imgLength }</span>
             {
-                imgLength > 1 && <img className="arrow arrow__right" src={ arrow } alt="Vue suivante" onClick={imgNext}/>
+                imgLength > 1 && <img className="arrow" src={ arrow } alt="Vue suivante" onClick={imgNext}/>
             }
         </div>
     )
